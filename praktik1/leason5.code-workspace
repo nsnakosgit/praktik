@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../leason5"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "leason5"
+	}
+}

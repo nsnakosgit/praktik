@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: #555;
+}
+h1{
+    margin: 40px 60px;
+    text-align: center;
+}
+.digitalclock{
+    width: 1198px;
+    background-color: white;
+    color: black;
+    display: flex;
+    border-radius: 20rem;
+    user-select: none;
+    border: 3px solid blue;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.week{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    margin-right: 120px;
+    font-weight: bold;
+
+}
+.week .aktive {
+    color: blue;
+
+}
+
+.hour,
+.min,
+.dot,
+.sek{
+    display: inline-block;
+    font-size: 10rem;
+
+}
+
+.min{
+    color: yellow;
+    display: math;
+
+}
+.sek{
+    color: red;
+    display: math;
+}
+
+
+.invsible{
+    visibility: hidden;
+}

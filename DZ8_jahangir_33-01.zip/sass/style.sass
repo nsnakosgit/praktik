@@ -1,0 +1,419 @@
+@import "vars"
+.wrapper
+    position: relative
+
+    .menu
+        position: absolute
+        width: 100%
+        left: 0
+        top: 0
+        padding-top: 48px
+        padding-bottom: 48px
+        .menu__inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+            .logo
+                color: #FFF
+                font-size: 24px
+                font-weight: 700
+                width: 118px
+                height: 34px
+            ul
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 30px
+                a
+                    color: #FFF
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 155%
+                .singup
+                    display: flex
+                    height: 40.896px
+                    padding: 12px 24px
+                    justify-content: center
+                    align-items: center
+                    gap: 10px
+                    border-radius: 4px
+                    background: #086CF9
+nav
+    ul
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 40px
+        a
+            color: #FFF
+            font-size: 16px
+            font-weight: 400
+            line-height: 155%
+        img
+          justify-content: center
+          align-items: center
+
+
+
+.main
+    height: 100vh
+    background-image: url(../images/image-people.webp)
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    text-align: center
+    padding-top: 180px
+    color: white
+    @media (max-width: 1023px)
+        background: #ECF4FF
+        width: 100%
+        color: #222222
+    @media (max-width: 767px)
+        height: auto
+        padding-bottom: 60px
+        padding-top: 107px
+    h1
+        font-size: 56px
+        @media (max-width: 1023px)
+            font-size: 38px
+        @media (max-width: 500px)
+            font-size: 25px
+    p
+        width: 867px
+        margin: 24px auto 45px
+        font-size: 16px
+        line-height: 155%
+        @media (max-width: 880px)
+            width: 100%
+            margin-bottom: 30px
+
+.info
+    width: 1138px
+    background-color: #ffffff
+    margin: -30px auto 0
+    display: flex
+    justify-content: space-between
+    padding: 56px 88px
+    border-radius: 4px
+    box-shadow: 0 11px 35px 0 rgba(0, 0, 0, 0.08)
+    @media (max-width: 1150px)
+        width: 100%
+    &__block
+        display: flex
+        gap: 24px
+        align-items: center
+        @media (max-width: 880px)
+            width: 100px
+        span
+            color: #222
+            font-size: 36px
+            font-weight: 700
+        p
+            color: #086CF9
+            font-size: 16px
+            line-height: 155%
+.right:hover .scale
+    transform: scale(1.2)
+    transition: 0.5ms
+
+.course
+    padding-top: 140px
+    .course__inner
+        display: flex
+        gap: 35px
+        .left
+            flex: 0 1 519px
+            h2
+                margin-bottom: 24px
+            .desc
+                margin-bottom: 16px
+                width: 478px
+            h5
+                width: 489px
+                margin-bottom: 32px
+                color: #333
+                font-size: 20px
+                font-weight: 400
+                line-height: 28px
+        .right
+            width: 595px
+            height: 433px
+            background-image: url(../images/image-course.webp)
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 4px
+            a
+                width: 80px
+                height: 80px
+                background-color: #fff
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+.work__item:hover .scale
+    transform: scale(1.2)
+    transition: 0.5ms
+.work
+    padding-top: 128px
+    text-align: center
+    .desc
+        width: 423px
+        margin: 12px auto 48px
+    .work__bottom
+        display: flex
+        gap: 54px
+
+.work__item
+    h3
+        color: #222
+        font-size: 24px
+        margin-top: 24px
+        margin-bottom: 16px
+    p
+        line-height: 155%
+
+.online
+    margin-top: 128px
+    background-color: #ECF4FF
+    padding-top: 60px
+    padding-bottom: 60px
+    text-align: center
+    .desc
+        width: 674px
+        margin: 12px auto 48px
+
+.online__items
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    row-gap: 30px
+    .online__item
+        flex: 0 1 368px
+        padding: 24px 24px 35px
+        background-color: #fff
+        border-radius: 10px
+        p
+            text-align: left
+            color: #555
+            line-height: 155%
+
+.online__item_info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 24px
+    padding-bottom: 24px
+    border-bottom: 0.5px solid #E9E8E8
+    div
+        display: flex
+        gap: 18px
+
+.online__item_title
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 20px
+    margin-bottom: 18px
+    h3
+        color: #333
+        font-size: 24px
+    span
+        color: #086CF9
+        font-size: 24px
+        font-weight: 700
+
+.online__item_image
+    height: 208px
+    border-radius: 6px
+    overflow: hidden
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+
+.events
+    padding: 128px 0
+    background-color: #dcd8d8
+    h2
+        color: #222
+        margin-bottom: 12px
+        text-align: center
+        font-size: 48px
+        font-weight: 700
+    .events_p
+        text-align: center
+        color: #444
+        font-size: 16px
+        font-weight: 400
+        line-height: 155%
+        width: 421px
+        margin: 0 auto 48px
+
+.events_colleges
+    display: flex
+    margin-top: 48px
+    gap: 24px
+    .college
+        flex: 0 1 368px
+        background-color: #fff
+        border-radius: 6px
+        overflow: hidden
+        .apr
+            display: inline-flex
+            height: 390px
+            flex-direction: column
+            align-items: flex-start
+            .apr_img
+                height: 240px
+                position: relative
+                border-radius: 6px
+                overflow: hidden
+                .apr_text
+                    position: absolute
+                    border-radius: 6px 0 0 0
+                    background: #086CF9
+                    display: inline-flex
+                    padding: 8px 12px
+                    color: #FFF
+                    width: 65px
+                    height: 62px
+                    font-size: 18px
+                    font-weight: 500
+                    text-align: center
+                    align-items: center
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+            .event_text
+                padding: 24px 24px 0 24px
+                .ivan
+                    width: 267px
+                    color: #222
+                    font-size: 20px
+                    font-weight: 500
+                .kampus
+                    width: 243px
+                    color: #222
+                    font-size: 20px
+                    font-weight: 500
+                .david
+                    width: 235px
+                    color: #222
+                    font-size: 20px
+                    font-weight: 500
+.colleges
+    display: flex
+    color: #555
+    gap: 29px
+    font-size: 14px
+    font-weight: 400
+    line-height: 155%
+    padding-top: 20px
+    div
+        display: flex
+        gap: 8px
+
+
+.footer
+    padding-top: 128px
+    margin-bottom: 60px
+    background-color: #D3E5FE
+    padding-bottom: 80px
+    @media (max-width: 1150px)
+        width: 100%
+        padding-bottom: 60px
+        padding-top: 60px
+    .footer_inner
+        display: inline-flex
+        align-items: flex-start
+        gap: 91px
+        @media (max-width: 1024px)
+            width: 100%
+            flex-wrap: wrap
+            gap: 50px
+        @media (max-width: 767px)
+            width: 100%
+
+
+.nein
+    color: #222
+    font-size: 30px
+    font-weight: 700
+    margin-bottom: 24px
+    @media (max-width: 767px)
+        margin-bottom: 24px
+.education
+    p
+        width: 360px
+        color: #555
+        font-size: 16px
+        font-weight: 400
+        line-height: 155%
+        margin-bottom: 32px
+        @media (max-width: 400px)
+            width: 100%
+    div
+        display: flex
+        justify-content: start
+        align-items: center
+        gap: 16px
+        .svg
+            padding: 14px
+            border-radius: 4px
+            background: #FFF
+
+.feature
+    ul
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        row-gap: 16px
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 8px
+        a
+            color: #444
+            font-size: 16px
+            font-weight: 400
+
+.support
+    ul
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        row-gap: 16px
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 8px
+            a
+                color: #444
+                font-size: 16px
+                font-weight: 400
+.contact
+    p
+        width: 203px
+        color: #555
+        font-size: 16px
+        font-weight: 400
+        line-height: 155%
+        margin-bottom: 16px
+    ul
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        row-gap: 16px
+        li
+            display: flex
+            justify-content: center
+            align-items: center
+            gap: 8px
+            a
+                color: #444
+                font-size: 16px
+                font-weight: 400

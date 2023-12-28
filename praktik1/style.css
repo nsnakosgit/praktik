@@ -98,6 +98,8 @@ body {
 
 .toggle {
   grid-area: toggle;
+  color:  #131419;
+  font-size: 40px;
 }
 
 .display {

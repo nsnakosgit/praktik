@@ -10,6 +10,10 @@ body{
 h1{
     margin: 40px 60px;
     text-align: center;
+    font-size: 90px;
+    color: #fff;
+    
+    
 }
 .digitalclock{
     width: 1198px;
@@ -46,8 +50,50 @@ h1{
     font-size: 10rem;
 
 }
-
+.time-name{
+    position: absolute;
+	display: flex;
+	gap: 182px;
+	font-size: 20px;
+	color: blue;
+	margin-top: 145px;
+	margin-left: 230px;
+}
+.time-hour{
+    color: black;
+	border: 1px solid blue;
+	border-radius: 20px;
+	width: 48px;
+	background: blue;
+	height: 26px;
+}
+.time-min{
+    color: yellow;
+	border: 1px solid blue;
+	border-radius: 20px;
+	width: 48px;
+	background: blue;
+	height: 26px;
+}
+.time-sek{
+    color: red;
+	border: 1px solid blue;
+	border-radius: 20px;
+	width: 48px;
+	background: blue;
+	height: 26px;
+}
+.time-milsek{
+    color: red;
+	border: 1px solid blue;
+	border-radius: 20px;
+	width: 63px;
+	background: blue;
+	height: 26px;
+}   
+    
 .min{
+    
     color: yellow;
     display: math;
 

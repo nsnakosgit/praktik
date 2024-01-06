@@ -2,10 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+	
 }
 body{
-    background-color: #555;
+    width:100%;
+    heigth:100vh;
+	
+    background: liner-gradient( 45deg, #0a0a0a, #3a4452);
+    	backgroud-repeat: no-repeat;
 }
 h1{
     margin: 40px 60px;
@@ -16,6 +20,7 @@ h1{
     
 }
 .digitalclock{
+	position: relative;
     width: 1198px;
     background-color: white;
     color: black;
@@ -45,7 +50,9 @@ h1{
 .hour,
 .min,
 .dot,
-.sek{
+.sek,
+.milsek,
+{
     display: inline-block;
     font-size: 10rem;
 
@@ -53,7 +60,8 @@ h1{
 .time-name{
     position: absolute;
 	display: flex;
-	gap: 182px;
+	justify-content: space-around;
+	gap: 160px;
 	font-size: 20px;
 	color: blue;
 	margin-top: 145px;
@@ -68,7 +76,7 @@ h1{
 	height: 26px;
 }
 .time-min{
-    color: yellow;
+   	color: yellow;
 	border: 1px solid blue;
 	border-radius: 20px;
 	width: 48px;
@@ -76,7 +84,7 @@ h1{
 	height: 26px;
 }
 .time-sek{
-    color: red;
+    	color: red;
 	border: 1px solid blue;
 	border-radius: 20px;
 	width: 48px;
@@ -84,7 +92,8 @@ h1{
 	height: 26px;
 }
 .time-milsek{
-    color: red;
+	
+   	color: red;
 	border: 1px solid blue;
 	border-radius: 20px;
 	width: 63px;
@@ -92,8 +101,7 @@ h1{
 	height: 26px;
 }   
     
-.min{
-    
+.min{ 
     color: yellow;
     display: math;
 
@@ -102,6 +110,10 @@ h1{
     color: red;
     display: math;
 }
+.milsek{
+	color: red;
+    	display: math;			
+}	
 
 
 .invsible{
